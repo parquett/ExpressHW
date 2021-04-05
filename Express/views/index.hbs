@@ -9,13 +9,13 @@
                         <input type="checkbox" checked name="completed">
                         <span class="completed">{{title}}</span>
                     {{else}}
-                        <input type="checkbox">
+                        <input type="checkbox" name="completed">
                         <span>{{title}}</span>
                     {{/if}}
                     <input type="hidden" value="{{_id}}" name="id">
                     <div>
                         <button class="btn btn-small">Save</button>
-                        <button class="btn btn-small" formaction="/archiving">Archive</button>
+                        <button class="btn btn-small" formaction="/archive">Archive</button>
                     </div>
                 </label>
                 </form>
